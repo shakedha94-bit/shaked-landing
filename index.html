@@ -113,10 +113,19 @@ blockquote{font-family:var(--quote);font-size:clamp(24px,3.4vw,32px);line-height
 .creds li{margin:6px 0}
 @media (max-width:760px){.about{grid-template-columns:1fr;gap:24px}}
 
+.said-title{font-size:20px;margin:48px 0 16px}
+.said{display:grid;grid-template-columns:1.6fr 1fr;gap:20px}
+.said figure{margin:0;background:var(--cream);border:1px solid var(--line);border-right:4px solid var(--terracotta);border-radius:16px;padding:22px 24px}
+.said blockquote{font-size:19px;line-height:1.6;margin:0;max-width:none}
+.said figcaption{margin-top:10px;font-size:14px;color:var(--ink-soft)}
+@media (max-width:760px){.said{grid-template-columns:1fr}}
+
 /* sahara */
 .sahara{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;border:1px dashed var(--terracotta);border-radius:20px;padding:22px 26px}
 .sahara h3{margin:0 0 4px;font-size:19px}
 .sahara p{margin:0;color:var(--ink-soft);font-size:15px;max-width:52ch}
+.kind{list-style:none;padding:0;margin:12px 0 0;display:grid;gap:6px}
+.kind li{font-family:var(--quote);font-size:16px;line-height:1.5;color:var(--ink);max-width:56ch}
 .sahara .btns a{font-size:14px;padding:8px 16px}
 
 /* contact */
@@ -262,8 +271,14 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
         <li>לומדת הנחיית קבוצות בבית הספר "נתיב"</li>
         <li>ספרות וכתיבה: מכללת מנשר והאוניברסיטה הפתוחה</li>
       </ul>
-      <!-- להוסיף כאן, אחרי אישור מהעמותות: "עבדתי עם" + שמות הארגונים, וציטוטים מתיק ההוכחות -->
     </aside>
+  </div>
+  <div class="wrap">
+    <h3 class="said-title">מה אמרו אחרי הסדנה</h3>
+    <div class="said">
+      <figure><blockquote>"תודה על סדנת כתיבה רגישה ומדויקת. הצלחת דרך המילים לחבר בין הנשים, לפתוח שיחות, להכניס אותנו לעומק וליצור מרחב שבו כל אחת פגשה גם את עצמה וגם אחת את השנייה קצת אחרת."</blockquote><figcaption>משתתפת בסדנת כתיבה לנשים</figcaption></figure>
+      <figure><blockquote>"שקד הזו אלופה. זו הסדנה הכי טובה שהייתה כאן עד עכשיו!"</blockquote><figcaption>משתתפת בסדנת כתיבה</figcaption></figure>
+    </div>
   </div>
 </section>
 
@@ -273,6 +288,10 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
       <div>
         <h3>סַהֲרָה</h3>
         <p>יומן כתיבה לפני השינה, ותהליך דיגיטלי של 33 שאלות להיכרות עצמית.</p>
+        <ul class="kind">
+          <li>"בלילה, בזכות השאלות שלך, מסתכלים על מה שיש, על מה שהיה, על מה שעשיתי ועל מה שאני גאה בו."</li>
+          <li>"ממש הרגשתי שהשאלות והמחשבה עליהן נשארות ומלוות אותי."</li>
+        </ul>
       </div>
       <div class="btns">
         <a class="btn btn-ghost" href="https://pay.grow.link/50620ab007644d472b300ee20a312a46-MTk3MzU5NA" target="_blank" rel="noopener">התהליך הדיגיטלי · 29 ₪</a>
