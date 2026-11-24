@@ -53,14 +53,10 @@ a{color:var(--terracotta-dark)}
 .btn-ghost{background:transparent;color:var(--terracotta-dark)}
 .btn-ghost:hover{background:var(--cream)}
 .btns{display:flex;gap:12px;flex-wrap:wrap}
-.voices{margin-top:44px}
-.voices h3{font-size:22px;margin:0 0 4px}
-.voices .src{font-size:14px;color:var(--ink-soft);margin:0 0 18px}
-.qgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
-.qgrid figure{margin:0;background:var(--cream);border:1px solid var(--line);border-radius:16px;padding:20px 22px;display:flex;flex-direction:column;gap:10px}
-.qgrid blockquote{margin:0;font-size:16.5px;line-height:1.65}
-.qgrid blockquote::before{content:"”";display:block;font-size:40px;line-height:.6;color:var(--terracotta);margin-bottom:6px}
-.qgrid figcaption{font-size:14px;font-weight:700;color:var(--terracotta-dark)}
+.qgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+.qgrid figure{margin:0;background:var(--cream);border:1px solid var(--line);border-right:4px solid var(--terracotta);border-radius:16px;padding:22px 24px}
+.qgrid blockquote{font-size:19px;line-height:1.6;margin:0;max-width:none}
+.qgrid figcaption{margin-top:10px;font-size:14px;color:var(--ink-soft)}
 
 /* hero */
 .hero{padding:64px 0 56px}
@@ -262,16 +258,15 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
       <p class="note">אלימות כזו לא שייכת למגדר. היא יכולה לקרות בכל זוגיות, ועל זה אני מדברת בגלוי.</p>
     </aside>
   </div>
-  <div class="wrap voices">
-    <h3>מה אמרו משתתפות</h3>
-    <p class="src">מתוך המשובים, הרצאה במועדון החברים באניעם · נובמבר 2026</p>
+  <div class="wrap">
+    <h3 class="said-title">מה אמרו אחרי ההרצאה</h3>
     <div class="qgrid">
-      <figure><blockquote>ממליצה בחום. סיפור חיים מרתק, מעורר השראה.</blockquote><figcaption>משתתפת</figcaption></figure>
-      <figure><blockquote>ערב עם המון פרופורציות על החיים, כלים וכוחות להתבונן ולהבין מהי מערכת יחסים רעילה, ובעיקר להאמין בכוחות שלי.</blockquote><figcaption>ענבר</figcaption></figure>
-      <figure><blockquote>מפגש עם אישה אמיצה, שמשתפת בהתמודדות מטלטלת עם אלימות שקופה במערכת יחסים. העוצמה שלה והיכולת להתמודד.</blockquote><figcaption>משתתפת</figcaption></figure>
-      <figure><blockquote>מרגש לשמוע סיפור על התמודדות עם מערכת יחסים לא בריאה, ואיך היא יצאה ממנה. גיבורה.</blockquote><figcaption>חיה</figcaption></figure>
-      <figure><blockquote>מעניין ומרתק לשמוע את הסיפור שלך ואת הלמידה שלך מתוכו, ואת הכלים שנעזרת בהם באותה תקופה.</blockquote><figcaption>שקד</figcaption></figure>
-      <figure><blockquote>קיבלתי תובנות נוספות על מערכות יחסים, וחשבתי על הבת שלי.</blockquote><figcaption>דבורה</figcaption></figure>
+      <figure><blockquote>"ממליצה בחום. סיפור חיים מרתק, מעורר השראה."</blockquote><figcaption>משתתפת בהרצאה</figcaption></figure>
+      <figure><blockquote>"ערב עם המון פרופורציות על החיים, כלים וכוחות להתבונן ולהבין מהי מערכת יחסים רעילה, ובעיקר להאמין בכוחות שלי."</blockquote><figcaption>ענבר, משתתפת בהרצאה</figcaption></figure>
+      <figure><blockquote>"מפגש עם אישה אמיצה, שמשתפת בהתמודדות מטלטלת עם אלימות שקופה במערכת יחסים. העוצמה שלה והיכולת להתמודד."</blockquote><figcaption>משתתפת בהרצאה</figcaption></figure>
+      <figure><blockquote>"מרגש לשמוע סיפור על התמודדות עם מערכת יחסים לא בריאה, ואיך היא יצאה ממנה. גיבורה."</blockquote><figcaption>חיה, משתתפת בהרצאה</figcaption></figure>
+      <figure><blockquote>"מעניין ומרתק לשמוע את הסיפור שלך ואת הלמידה שלך מתוכו, ואת הכלים שנעזרת בהם באותה תקופה."</blockquote><figcaption>שקד, משתתפת בהרצאה</figcaption></figure>
+      <figure><blockquote>"קיבלתי תובנות נוספות על מערכות יחסים, וחשבתי על הבת שלי."</blockquote><figcaption>דבורה, משתתפת בהרצאה</figcaption></figure>
     </div>
   </div>
 </section>
