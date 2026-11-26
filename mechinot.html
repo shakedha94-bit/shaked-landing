@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>שקד חזן · למכינות ולשירות הלאומי</title>
+<meta name="description" content="הרצאה וסדנת כתיבה על אלימות שקופה למכינות קדם־צבאיות, קומונות, שנת שירות ושירות לאומי: איך יצאתי. ובחרתי בעצמי.">
+<meta property="og:title" content="איך יצאתי. ובחרתי בעצמי. · למכינות ולשירות הלאומי">
+<meta property="og:description" content="הרצאה וסדנת כתיבה על אלימות שקופה, לגילאי 18–20.">
+<meta property="og:image" content="https://shaked.sahara-your-self.com/shaked.jpg">
+<meta property="og:url" content="https://shaked.sahara-your-self.com/mechinot.html">
+<meta property="og:type" content="website">
+<link rel="icon" href="icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;800&family=Frank+Ruhl+Libre:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#2b241f;
+  --ink-soft:#5a4f47;
+  --paper:#faf6f0;
+  --paper-deep:#f1e9de;
+  --terracotta:#a4643e;
+  --terracotta-dark:#7e4e30;
+  --cream:#fff8ea;
+  --line:rgba(43,36,31,0.12);
+  --body:"Heebo", "Arial", sans-serif;
+  --quote:"Frank Ruhl Libre", "David", serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.75;font-weight:400}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--terracotta-dark)}
+.wrap{max-width:1040px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left));padding-right:max(20px,env(safe-area-inset-right))}
+:focus-visible{outline:2px solid var(--terracotta);outline-offset:3px}
+
+/* header */
+.top{position:sticky;top:0;z-index:10;background:rgba(250,246,240,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px}
+.brand{font-weight:800;font-size:20px;text-decoration:none;color:var(--ink)}
+.brand span{font-weight:400;color:var(--ink-soft)}
+.nav{display:flex;gap:6px;flex-wrap:wrap}
+.nav a{text-decoration:none;color:var(--ink);font-size:15px;font-weight:500;padding:6px 12px;border-radius:999px}
+.nav a:hover{background:var(--paper-deep)}
+@media (max-width:760px){.nav a:not(.nav-cta){display:none}}
+.nav-cta{border:1px solid var(--terracotta);color:var(--terracotta-dark)!important}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-weight:700;font-size:16px;border-radius:999px;padding:12px 24px;border:1.5px solid var(--terracotta);transition:background .2s,color .2s}
+.btn-solid{background:var(--terracotta);color:var(--cream)}
+.btn-solid:hover{background:var(--terracotta-dark);border-color:var(--terracotta-dark)}
+.btn-ghost{background:transparent;color:var(--terracotta-dark)}
+.btn-ghost:hover{background:var(--cream)}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.qgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+.qgrid figure{margin:0;background:var(--cream);border:1px solid var(--line);border-right:4px solid var(--terracotta);border-radius:16px;padding:22px 24px}
+.qgrid blockquote{font-family:var(--body);font-size:17px;line-height:1.7;margin:0;max-width:none}
+.qgrid figcaption{margin-top:10px;font-size:14px;color:var(--ink-soft)}
+
+/* hero */
+.hero{padding:64px 0 56px}
+.hero .wrap{display:grid;grid-template-columns:1.3fr 1fr;gap:48px;align-items:center}
+.eyebrow{font-size:14px;font-weight:700;letter-spacing:.06em;color:var(--terracotta-dark);margin:0 0 12px}
+h1{font-size:clamp(34px,5.4vw,56px);line-height:1.15;font-weight:800;margin:0 0 18px;text-wrap:balance}
+h1 em{font-style:normal;color:var(--terracotta)}
+.hero p.lead{font-size:19px;color:var(--ink-soft);max-width:34ch;margin:0 0 28px}
+.portrait{position:relative}
+.portrait img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:220px 220px 24px 24px;background:var(--paper-deep)}
+.portrait figcaption{margin-top:12px;font-size:14px;color:var(--ink-soft);text-align:center}
+@media (max-width:760px){.hero{padding:36px 0}.hero .wrap{grid-template-columns:1fr;gap:28px}.portrait{max-width:300px;margin:0 auto;order:-1}}
+
+/* sections */
+section{padding:72px 0}
+section.alt{background:var(--paper-deep)}
+h2{font-size:clamp(28px,4vw,38px);line-height:1.2;font-weight:800;margin:0 0 14px;text-wrap:balance}
+.intro{font-size:18px;color:var(--ink-soft);max-width:60ch;margin:0 0 36px}
+
+
+/* product */
+.product{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+.product .ptitle{font-size:clamp(26px,3.5vw,34px);font-weight:800;line-height:1.2;margin:0 0 8px}
+.tag{display:inline-block;font-size:13px;font-weight:700;color:var(--terracotta-dark);background:var(--cream);border:1px solid var(--line);border-radius:999px;padding:3px 12px;margin-bottom:14px}
+.facts{background:var(--cream);border:1px solid var(--line);border-radius:20px;padding:24px 26px}
+.facts dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:10px 18px}
+.facts dt{font-weight:700;white-space:nowrap}
+.facts dd{margin:0;color:var(--ink-soft)}
+.facts .note{margin:16px 0 0;font-size:15px;color:var(--ink-soft);border-top:1px solid var(--line);padding-top:14px}
+ul.ticks{list-style:none;padding:0;margin:16px 0 24px}
+ul.ticks li{position:relative;padding-right:26px;margin:8px 0}
+ul.ticks li::before{content:"";position:absolute;right:4px;top:.75em;width:10px;height:2px;background:var(--terracotta)}
+@media (max-width:760px){.product{grid-template-columns:1fr;gap:24px}}
+
+/* method */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;counter-reset:s}
+.step{border-top:2px solid var(--terracotta);padding-top:14px}
+.step .age{font-size:14px;font-weight:700;color:var(--terracotta-dark)}
+.step h3{font-size:20px;margin:2px 0 6px}
+.step p{margin:0;color:var(--ink-soft);font-size:16px}
+@media (max-width:760px){.steps{grid-template-columns:1fr 1fr}}
+@media (max-width:420px){.steps{grid-template-columns:1fr}}
+blockquote{font-family:var(--quote);font-size:clamp(24px,3.4vw,32px);line-height:1.4;margin:44px 0 0;max-width:30ch;color:var(--ink)}
+
+/* more */
+.more-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.card{background:var(--cream);border:1px solid var(--line);border-radius:20px;padding:26px}
+.card h3{font-size:21px;margin:0 0 8px}
+.card p{margin:0 0 14px;color:var(--ink-soft)}
+.card .offer{font-size:15px;font-weight:500;color:var(--terracotta-dark);background:var(--paper);border-radius:12px;padding:10px 14px}
+@media (max-width:760px){.more-grid{grid-template-columns:1fr}}
+
+/* about */
+.about{display:grid;grid-template-columns:1.4fr 1fr;gap:44px}
+.about p{margin:0 0 14px}
+.creds{background:var(--cream);border:1px solid var(--line);border-radius:20px;padding:24px}
+.creds h3{font-size:18px;margin:0 0 10px}
+.creds ul{margin:0;padding-inline-start:18px;color:var(--ink-soft)}
+.creds li{margin:6px 0}
+@media (max-width:760px){.about{grid-template-columns:1fr;gap:24px}}
+
+.said-title{font-size:20px;margin:48px 0 16px}
+.said{display:grid;grid-template-columns:1.6fr 1fr;gap:20px}
+.said figure{margin:0;background:var(--cream);border:1px solid var(--line);border-right:4px solid var(--terracotta);border-radius:16px;padding:22px 24px}
+.said blockquote{font-family:var(--body);font-size:17px;line-height:1.7;margin:0;max-width:none}
+.said figcaption{margin-top:10px;font-size:14px;color:var(--ink-soft)}
+@media (max-width:760px){.said{grid-template-columns:1fr}}
+
+/* sahara */
+.sahara{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;border:1px dashed var(--terracotta);border-radius:20px;padding:22px 26px}
+.sahara h3{margin:0 0 4px;font-size:19px}
+.sahara p{margin:0;color:var(--ink-soft);font-size:15px;max-width:52ch}
+.kind{list-style:none;padding:0;margin:12px 0 0;display:grid;gap:6px}
+.kind li{font-family:var(--quote);font-size:16px;line-height:1.5;color:var(--ink);max-width:56ch}
+.sahara .btns a{font-size:14px;padding:8px 16px}
+
+/* contact */
+.contact{text-align:center}
+.contact .intro{margin-inline:auto}
+.contact .btns{justify-content:center}
+.channels{list-style:none;padding:0;margin:28px auto 0;display:flex;flex-wrap:wrap;justify-content:center;gap:12px 32px}
+.channels li{display:flex;gap:6px;align-items:baseline;font-size:14px}
+.channels span{font-weight:700;color:var(--ink-soft);font-size:13px}
+.channels a{font-weight:400;color:var(--ink-soft);text-decoration:none;border-bottom:1px solid var(--terracotta);overflow-wrap:anywhere}
+.channels a:hover{color:var(--terracotta)}
+footer{padding:28px 0 40px;border-top:1px solid var(--line);font-size:14px;color:var(--ink-soft)}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+.org{margin-top:18px;padding-top:16px;border-top:1px solid var(--line)}
+.org h3{font-size:17px;margin:0 0 6px}
+.org ul{margin:0;padding-inline-start:18px;color:var(--ink-soft);font-size:15px}
+.org li{margin:4px 0}
+.pdf{display:inline-block;margin-top:14px;font-size:15px;font-weight:500}
+.faq{display:grid;grid-template-columns:repeat(2,1fr);gap:16px 28px;margin:0}
+.faq div{background:var(--cream);border:1px solid var(--line);border-radius:16px;padding:18px 22px}
+.faq dt{font-weight:700;margin:0 0 4px}
+.faq dd{margin:0;color:var(--ink-soft);font-size:16px}
+@media (max-width:760px){.faq{grid-template-columns:1fr}}
+.sahara-small{margin-top:48px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+
+.more-grid.three{grid-template-columns:repeat(3,1fr)}
+@media (max-width:860px){.more-grid.three{grid-template-columns:1fr}}
+.card .tag{margin-bottom:10px}
+.note-line{margin:24px 0 0;font-size:16px;color:var(--ink-soft);border-right:3px solid var(--terracotta);padding-right:14px}
+footer a{color:inherit}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="index.html">שקד חזן <span>· סדנאות כתיבה והרצאות</span></a>
+    <nav class="nav" aria-label="ניווט ראשי">
+      <a href="#offer">מה אפשר להזמין</a>
+      <a href="#safety">מוגנות</a>
+      <a href="#faq">שאלות</a>
+      <a href="index.html">לעמוד הראשי</a>
+      <a class="nav-cta" href="#contact">לשמור תאריך</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<div class="hero">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">למכינות, לקומונות, לשנת שירות ולשירות הלאומי</p>
+      <h1>איך יצאתי.<br><em>ובחרתי בעצמי.</em></h1>
+      <p class="lead">הרצאה וסדנת כתיבה על אלימות שקופה, לגילאי <bdi dir="ltr">18–20</bdi>. בגיל הזה נבנים הקשרים הרציניים הראשונים, ודווקא אז הכי קשה לזהות קשר שמתחיל לכאוב.</p>
+      <div class="btns">
+        <a class="btn btn-solid" href="https://wa.me/972525557923?text=%D7%94%D7%99%D7%99%20%D7%A9%D7%A7%D7%93%2C%20%D7%90%D7%A0%D7%99%20%D7%9E___%20%D7%95%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A9%D7%9E%D7%95%D7%A2%20%D7%A2%D7%9C%20%D7%94%D7%94%D7%A8%D7%A6%D7%90%D7%94%20%D7%95%D7%94%D7%A1%D7%93%D7%A0%D7%94%20%D7%9C%D7%9E%D7%9B%D7%99%D7%A0%D7%95%D7%AA%20%D7%95%D7%9C%D7%A9%D7%99%D7%A8%D7%95%D7%AA%20%D7%94%D7%9C%D7%90%D7%95%D7%9E%D7%99" target="_blank" rel="noopener">לשמור תאריך לשנת 2027</a>
+        <a class="btn btn-ghost" href="#offer">מה אפשר להזמין</a>
+      </div>
+    </div>
+    <figure class="portrait">
+      <img src="shaked.jpg" alt="שקד חזן" width="1300" height="1500">
+    </figure>
+  </div>
+</div>
+
+<section class="alt" id="story">
+  <div class="wrap">
+    <h2>על ההרצאה</h2>
+    <p class="intro">אני מספרת את הסיפור האישי שלי מתוך מערכת יחסים רעילה: איך נכנסתי, איך יצאתי, ואיך הכתיבה הייתה הכלי שהחזיק אותי. מהסיפור הזה אנחנו עוברים לסימנים, ומהסימנים לכלים.</p>
+    <div class="more-grid three">
+      <div class="card">
+        <h3>שפה לזהות סימנים</h3>
+        <p>אצלם ואצל חברים: שליטה שמתחפשת לאהבה, גזלייטינג, ומעגל של פגיעה ופיוס.</p>
+      </div>
+      <div class="card">
+        <h3>הבנה במקום שיפוט</h3>
+        <p>למה כל כך קשה לצאת מקשר כזה, ואיך מדברים עם חבר או חברה שנמצאים בתוכו.</p>
+      </div>
+      <div class="card">
+        <h3>כתיבה כעזרה ראשונה</h3>
+        <p>תרגילים קצרים שאפשר לקחת הלאה. לא צריך לדעת לכתוב, ומשתף רק מי שרוצה.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="offer">
+  <div class="wrap">
+    <h2>מה אפשר להזמין</h2>
+    <p class="intro">כל אחת מהאפשרויות מותאמת למחזור, לסמינר או ליום עיון. נבנה יחד את מה שמתאים לכם.</p>
+    <div class="more-grid three">
+      <div class="card">
+        <span class="tag">למחזור שלם</span>
+        <h3>הרצאה</h3>
+        <p>"איך יצאתי. ובחרתי בעצמי." 90 דקות, או גרסה קצרה של 30–45 דקות. מתאימה לסמינר, ליום עיון או לשבוע נושא.</p>
+      </div>
+      <div class="card">
+        <span class="tag">לקבוצה של עד 15</span>
+        <h3>סדנת כתיבה "הקול שלי לפני הדרך"</h3>
+        <p>כלים לכתיבה יוצרת, לתקשורת ולהתמודדות עם משברים, ולמציאת הקול האישי, החוסן ותחושת הערך. מפגש אחד, או סדרה של 4 מפגשים.</p>
+      </div>
+      <div class="card">
+        <span class="tag">הכי מעמיק</span>
+        <h3>שילוב: הרצאה וסדנה</h3>
+        <p>3 שעות, כולל הפסקה. הרצאה למחזור, ואחריה סדנת כתיבה לקבוצה. מתאים ליום עיון שלם.</p>
+      </div>
+    </div>
+    <p class="note-line">לבנות השירות הלאומי: ההרצאה מועברת לבנות בלבד, בשפה מכבדת ובלי תוכן מיני.</p>
+  </div>
+</section>
+
+<section class="alt" id="safety">
+  <div class="wrap product">
+    <div>
+      <span class="tag">מוגנות</span>
+      <h2 class="ptitle">מרחב בטוח, מתואם מראש</h2>
+      <p>נושא כזה יכול לגעת במישהו בחדר. לכן אני לא מגיעה לבד: אני מתאמת עם הצוות שלכם לפני המפגש, וכולם יודעים מה עושים אם משהו עולה.</p>
+      <ul class="ticks">
+        <li>תיאום מראש עם הרכזת או עם אחראית המוגנות</li>
+        <li>פותחת בהסכמות ברורות</li>
+        <li>מישהו מהצוות שלכם זמין במהלך המפגש</li>
+        <li>משתף רק מי שרוצה, ומותר לצאת לנשום בלי להסביר</li>
+        <li>אני מתארת דפוסי התנהגות. אני לא מאבחנת ולא מטפלת</li>
+      </ul>
+    </div>
+    <aside class="facts" aria-label="מה הארגון מקבל">
+      <dl>
+        <dt>גיל</dt><dd><bdi dir="ltr">18–20</bdi>: מכינות, קומונות, שנת שירות ושירות לאומי</dd>
+        <dt>הרצאה</dt><dd>90 דקות, או <bdi dir="ltr">30–45</bdi> דקות</dd>
+        <dt>סדנה</dt><dd>עד 15 משתתפים, מפגש אחד או 4 מפגשים</dd>
+        <dt>שילוב</dt><dd>3 שעות כולל הפסקה</dd>
+      </dl>
+      <div class="org">
+        <h3>מה הארגון מקבל</h3>
+        <ul>
+          <li>נוהל מוגנות כתוב, ותיאום מראש</li>
+          <li>כרטיס כלים לכל משתתף ומשתתפת</li>
+          <li>משוב אנונימי וסיכום קצר לצוות</li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<section id="said">
+  <div class="wrap">
+    <h2>מה אמרו אחרי ההרצאות</h2>
+    <div class="qgrid">
+      <figure><blockquote>"ערב עם המון פרופורציות על החיים, כלים וכוחות להתבונן ולהבין מהי מערכת יחסים רעילה, ובעיקר להאמין בכוחות שלי."</blockquote><figcaption>ענבר, משתתפת בהרצאה</figcaption></figure>
+      <figure><blockquote>"הערב היה מדויק, מחבר ומאפשר ביטוי עצמי ושיתוף."</blockquote><figcaption>משתתפת בהרצאה</figcaption></figure>
+      <figure><blockquote>"כתיבה משחררת לפעמים את מה שהלב לא יכול לצעוק."</blockquote><figcaption>משתתפת בהרצאה</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="faq">
+  <div class="wrap">
+    <h2>שאלות נפוצות</h2>
+    <dl class="faq">
+      <div><dt>מתי אפשר להזמין?</dt><dd>אני פותחת עכשיו תאריכים לשנת 2027, מינואר ועד אוגוסט. כדאי לשמור תאריך כשסוגרים את תוכנית המחצית.</dd></div>
+      <div><dt>איך מתבצע התשלום?</dt><dd>אני עוסקת פטורה. מוציאה חשבונית, ומצרפת אישור ניהול ספרים ואישור ניכוי מס במקור.</dd></div>
+      <div><dt>מה צריך לספק?</dt><dd>חדר שקט, ואיש צוות זמין. מסך זה בונוס, לא חובה. את כל החומרים אני מביאה.</dd></div>
+      <div><dt>ואם צריך לבטל?</dt><dd>עד 7 ימים לפני המפגש, בלי עלות. פחות מזה: 50%.</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap about">
+    <div>
+      <h2>קצת עליי</h2>
+      <p>קוראים לי שקד, מאניעם שברמת הגולן. אני מנחת קבוצות וסדנאות כתיבה, ומאמנת בגישת אדלר.</p>
+      <p>הכתיבה איתי מגיל 12, מאז שאמא שלי התחילה לכתוב לי מכתבים. כשיצאתי ממערכת יחסים רעילה, היא הייתה הכלי שעזר לי לבנות את עצמי מחדש. את מה שאני מלמדת, עברתי בעצמי.</p>
+    </div>
+    <aside class="creds">
+      <h3>הכשרה</h3>
+      <ul>
+        <li>הנחיית קבוצות: בית הספר "נתיב"</li>
+        <li>אימון בגישת אדלר: מכון אדלר, בשלב ההתמחות</li>
+        <li>ספרות וכתיבה: מכללת מנשר והאוניברסיטה הפתוחה</li>
+      </ul>
+    </aside>
+  </div>
+</section>
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="contact">
+      <h2>לשמור לכם תאריך?</h2>
+      <p class="intro">כתבו לי מאיזה ארגון אתם, ובערך כמה משתתפים. אחזור אליכם תוך יום עבודה עם הצעה מותאמת ודף היכרות.</p>
+      <div class="btns"><a class="btn btn-solid" href="https://wa.me/972525557923?text=%D7%94%D7%99%D7%99%20%D7%A9%D7%A7%D7%93%2C%20%D7%90%D7%A0%D7%99%20%D7%9E___%20%D7%95%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A9%D7%9E%D7%95%D7%A2%20%D7%A2%D7%9C%20%D7%94%D7%94%D7%A8%D7%A6%D7%90%D7%94%20%D7%95%D7%94%D7%A1%D7%93%D7%A0%D7%94%20%D7%9C%D7%9E%D7%9B%D7%99%D7%A0%D7%95%D7%AA%20%D7%95%D7%9C%D7%A9%D7%99%D7%A8%D7%95%D7%AA%20%D7%94%D7%9C%D7%90%D7%95%D7%9E%D7%99" target="_blank" rel="noopener">לשלוח הודעה בוואטסאפ</a></div>
+      <ul class="channels">
+        <li><span>מייל</span><a href="mailto:shakedha94@gmail.com" dir="ltr">shakedha94@gmail.com</a></li>
+        <li><span>טלפון</span><a href="tel:+972525557923" dir="ltr">052-5557923</a></li>
+        <li><span>אינסטגרם</span><a href="https://www.instagram.com/shaked.hazan.sahara/" target="_blank" rel="noopener" dir="ltr">@shaked.hazan.sahara</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© שקד חזן</span>
+    <span><a href="index.html">סדנאות כתיבה והרצאות לנערות ולנשים</a> · מהגולן לכל הארץ</span>
+  </div>
+</footer>
+</body>
+</html>
